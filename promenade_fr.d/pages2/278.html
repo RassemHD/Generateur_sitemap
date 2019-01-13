@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <META http-equiv="Content-type" content="text/html; charset=utf-8" />
+   <META NAME="Author" CONTENT="G. SATRE">
+   <TITLE>Comprendre - Calculs astronomiques - Jour julien</TITLE>
+
+<!-- pour la comptabilité pour internet explorer 9-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" href="../pages1/style-dernier13.css"/>
+    <script src="../pages1/jquery-1.11.1.min.js"></script>
+    <script src="../pages1/jquery.mobile.custom.min.js"></script>
+    <script src="../pages1/script.js"></script>
+
+  <!--[if lt IE 7]>
+  <link rel="stylesheet" href="style_ie.css"/>
+  <![endif]-->
+
+<!-- Date de la dernière mise-à-jour par N. Thouvenin : 21/05/2013 -->
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- hide this script tag's contents from old browsers
+
+w = self;
+
+function compute(form) {
+
+    MM=(form.nmonth.value=="")? "0" : eval(form.nmonth.value);
+
+    DD=(form.nday.value=="")? "0": eval(form.nday.value);
+
+    YY=(form.nyear.value=="") ? "0" :eval(form.nyear.value);
+
+    HR=(form.nhour.value=="")? "0" :eval(form.nhour.value);
+
+    MN=(form.nminute.value=="") ? "0" :eval(form.nminute.value);
+
+    SS=(form.nsecondes.value=="") ? "0" : eval(form.nsecondes.value);
+
+    with (Math) {
+
+      HR = HR + (MN / 60) + (SS / 3600);
+
+      GGG = 1;
+
+      if( YY < 1582 ) GGG = 0;
+
+      if( YY <= 1582 && MM < 10 ) GGG = 0;
+
+      if( YY <= 1582 && MM == 10 && DD < 5 ) GGG = 0;
+
+      JD = -1 * floor(7 * (floor((MM + 9) / 12) + YY) / 4);
+
+      S = 1;
+
+      if ((MM - 9)<0) S=-1;
+
+      A = abs(MM - 9);
+
+      J1 = floor(YY + S * floor(A / 7));
+
+      J1 = -1 * floor((floor(J1 / 100) + 1) * 3 / 4);
+
+      JD = JD + floor(275 * MM / 9) + DD + (GGG * J1);
+
+      JD = JD + 1721027 + 2 * GGG + 367 * YY - 0.5;
+
+      JD = JD + (HR / 24);
+
+    }
+
+    form.result.value = JD;
+
+}
+
+function reverse(form) {
+
+   JD=eval(form.result.value)
+
+   with (Math) {
+
+   Z = floor(JD+0.5);
+
+   F = JD+0.5 - Z;
+
+   if (Z < 2299161) {
+
+      A = Z
+
+	} else
+
+      {I = floor((Z - 1867216.25)/36524.25);
+
+      A = Z + 1 + I - floor(I/4);
+
+    }
+
+   B = A + 1524;
+
+   C = floor((B - 122.1)/365.25);
+
+   D = floor(365.25 * C);
+
+   T = floor((B - D)/ 30.600);
+
+   RJ = B - D - floor(30.6001 * T) + F;
+
+   JJ = floor(RJ);
+
+   RH = (RJ - floor(RJ)) * 24;
+
+   Heure=floor(RH);
+
+   Mn = floor((RH - Heure )*60);
+
+   Sec = ((RH - Heure )*60 - Mn )*60;
+
+   if (T < 14) {
+
+      MM = T - 1
+
+   } else
+
+   { if ((T == 14) || (T == 15))  MM = T - 13
+
+   }
+
+   if (MM > 2) {
+
+      AA = C - 4716 } else
+
+   { if ((MM == 1) || (MM == 2)) AA = C - 4715
+
+   }
+
+   }
+
+    form.nmonth.value =  MM;
+
+    form.nday.value   =  JJ;
+
+    form.nhour.value  =  Heure;
+
+    form.nyear.value  =  AA;
+
+    form.nminute.value=  Mn;
+
+    form.nsecondes.value=Sec;
+
+}
+
+function Newdate(form) {
+
+	form.nmonth.value = "";
+
+	form.nday.value = "";
+
+	form.nyear.value = "";
+
+	form.nhour.value = "";
+
+	form.nminute.value = "";
+
+	form.nsecondes.value="";
+
+	form.nday.focus();
+
+}
+
+function startdate() {
+
+ gettheDate()
+
+}
+
+function gettheDate() {
+
+ Todays = new Date();
+
+ TheYear = Todays.getFullYear();
+
+ TheMonth = (Todays.getMonth()+ 1);
+
+ TheDay = Todays.getDate();
+
+ TheHour = Todays.getHours() - 1; // HEURE D'HIVER - !ATTENTION!
+
+ TheMinu = Todays.getMinutes();
+
+ TheSec = Todays.getSeconds();
+
+ document.form.nyear.value = TheYear;
+
+ document.form.nmonth.value = TheMonth;
+
+ document.form.nday.value = TheDay;
+
+ document.form.nhour.value = TheHour;
+
+ document.form.nminute.value = TheMinu;
+
+ document.form.nsecondes.value = TheSec;
+
+}
+
+function Newday(form) {
+
+	form.result.value = "";
+
+	form.result.focus();
+
+}
+
+// done hiding from old browsers -->
+
+   </SCRIPT>
+</HEAD>
+
+<BODY>
+
+
+    <div id="bloc_page">
+
+
+
+      <header id="ancre">
+	<a href="../pages5/51.html"><img class="image-bandeau" src="../images/new_image/bandeau.png" alt="" /></a>
+
+ 
+	 
+ 
+ 
+<ul id="menu">
+    <li>
+        <a href="../pages3/37.html"><span class="police_chap">Encyclopédie</span> </a>
+
+        <ul>
+            <li><a href="../pages1/19.html">Caractéristiques <br /> des planètes</a></li>
+
+            <li>
+                <a href="../pages1/139.html">Choisir un corps céleste<br />dans le système solaire</a>
+                <ul>
+                    <li><a href="../pages1/131.html">Soleil</a></li>
+                    <li><a href="../pages6/82.html">Mercure</a></li>
+
+                    <li><a href="../pages1/152.html">Vénus</a></li>
+                    <li><a href="../pages1/176.html">Terre</a></li>
+
+                    <li><a href="../pages1/177.html">Lune</a></li>
+                    <li><a href="../pages6/70.html">Mars</a></li>
+
+                    <li><a href="../pages5/54.html">Jupiter</a></li>
+                    <li><a href="../pages1/119.html">Saturne</a></li>
+
+                    <li><a href="../pages1/148.html">Uranus</a></li>
+                    <li><a href="../pages6/89.html">Neptune</a></li>
+
+                    <li><a href="../pages1/110.html">Pluton</a></li>
+                    <li><a href="../pages6/9.html">Astéroides</a></li>
+
+                    <li><a href="../pages2/23.html">Comètes</a></li>
+
+                </ul>
+            </li>
+            <li><a href="../pages3/376.html">Le système solaire <br /> en chiffres</a></li>
+
+            <li><a href="../pages2/240.html">Origine des noms</a></li>
+
+            <li><a href="../pages2/257.html">Classification des corps</a></li>
+        </ul>
+
+    </li>
+    <li>
+        <a href="../pages3/32.html"><span class="police_chap">Découvertes</span> </a>
+        <ul>
+            <li><a href="../pages3/312.html">Astronomes célèbres</a></li>
+
+            <li><a href="../pages1/168.html">Dates importantes</a></li>
+
+            <li>
+                <a href="../pages1/168.html">Découvertes dans <br />le système solaire</a>
+                <ul>
+                    <li>
+                        <a href="../pages3/371.html">Soleil</a>
+                        <ul>
+                            <li>
+                                <a href="../pages3/374.html">Taches solaires</a>
+                            </li>
+
+                            <li>
+                                <a href="../pages1/133.html">Eclipses solaires</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages6/83.html">Mercure</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/83.html">Avance du périhélie</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages1/155.html">Vénus</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages1/155.html">Phases</a>
+                            </li>
+                            <li>
+                                <a href="../pages1/155.html">Rotations</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages1/183.html">Terre</a>
+                        <ul>
+                            <li>
+                                <a href="../pages1/183.html">Forme</a>
+                            </li>
+
+                            <li>
+                                <a href="../pages1/183.html">Mouvement</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages6/64.html">Lune</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/64.html">Cratères</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/64.html">Surface</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages3/372.html">Mars</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages3/372.html">Surfaces</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/75.html">Canaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/76.html">Période de rotation</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/77.html">Satellites</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages5/56.html">Jupiter</a>
+                        <ul>
+                            <li>
+                                <a href="../pages5/56.html">Satellites</a>
+                            </li>
+                            <li>
+                                <a href="../pages5/57.html">Anneaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages5/58.html">Tache rouge</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages1/124.html">Saturne</a>
+                        <ul>
+                            <li>
+                                <a href="../pages1/124.html">Anneaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages2/256.html">Satellites</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/151.html">Uranus</a></li>
+                    <li>
+                        <a href="../pages6/91.html">Neptune</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/91.html">Orbitographie de <br />la planète</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/92.html">Satellites</a>
+                            </li>
+                            <li>
+                                <a href="../pages1/180.html">Anneaux</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/112.html">Pluton</a></li>
+
+                    <li><a href="../pages1/190.html">Astéroides</a></li>
+
+                    <li><a href="../pages2/25.html">Comètes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+
+ <a href="../pages1/164.html"><span class="police_chap">Espace</span> </a>
+
+<ul>
+            <li><a href="../pages2/217.html">Historique</a></li>
+
+            <li>
+                <a href="../pages2/22.html">Site de lancement</a>
+                <ul>
+                    <li><a href="../pages1/18.html">Cap Kennedy</a></li>
+                    <li><a href="../pages6/60.html">Kourou</a></li>
+                    <li><a href="../pages1/14.html">Baikonour</a></li>
+                    <li><a href="../pages6/762.html">Autres centres spatiaux</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages2/217.html">Missions spatiales</a>
+                <ul>
+                    <li><a href="../pages5/5.html">Apollo</a></li>
+                    <li><a href="../pages6/69.html">Mariner</a></li>
+
+                    <li><a href="../pages1/159.html">Viking</a></li>
+                    <li><a href="../pages1/160.html">Voyager</a></li>
+
+                    <li><a href="../pages4/41.html">Galileo</a></li>
+                    <li><a href="../pages2/219.html">Soho</a></li>
+
+                    <li><a href="../pages6/672.html">Mars Express</a></li>
+                    <li><a href="../pages2/222.html">Cassini/Huygens</a></li>
+                    <li><a href="../pages6/669.html">Luna</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+
+
+    </li>
+
+    <li>
+        <a href="../pages1/114.html"><span class="police_chap">Observatoires</span> </a>
+
+        <ul>
+
+            <li>
+                <a href="../pages6/95.html">France</a>
+                <ul>
+                    <li><a href="../pages1/103.html">Observatoire de Paris</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages2/245.html">L'Institut de Mécanique <br />Céleste et des Calculs <br />en Ephémérides/IMCCE</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/86.html">Observatoire de Meudon</a>
+                            </li>
+                            <li>
+                                <a href="../pages2/281.html">Nançay</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/107.html">Pic du Midi</a></li>
+                    <li><a href="../pages6/96.html">Haute Provence</a></li>
+                    <li><a href="../pages2/267.html">Besançon</a></li>
+                    <li><a href="../pages2/268.html">Bordeaux</a></li>
+                    <li><a href="../pages2/269.html">Côte d'Azur</a></li>
+                    <li><a href="../pages2/270.html">Grenoble</a></li>
+                    <li><a href="../pages2/274.html">Lyon</a></li>
+                    <li><a href="../pages2/271.html">Marseille</a></li>
+                    <li><a href="../pages2/272.html">Strasbourg</a></li>
+                    <li><a href="../pages2/273.html">Toulouse</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages6/833.html">Europe</a>
+                <ul>
+                    <li><a href="../pages2/247.html">Greenwich</a></li>
+                    <li><a href="../pages6/822.html">Bruxelles</a></li>
+                    <li><a href="../pages6/823.html">Turin</a></li>
+                    <li><a href="../pages6/824.html">Castel Gandolfo</a></li>
+                    <li><a href="../pages6/825.html">Catane</a></li>
+                    <li><a href="../pages6/826.html">San Fernando</a></li>
+                    <li><a href="../pages6/827.html">Bucarest</a></li>
+                    <li><a href="../pages6/828.html">Poznan</a></li>
+                    <li><a href="../pages6/823.html">Nikolaev</a></li>
+                    <li><a href="../pages2/248.html">Pulkovo</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages2/246.html">Autres</a>
+                <ul>
+                    <li><a href="../pages2/249.html">Washington D.C.</a></li>
+                    <li><a href="../pages6/99.html">Mont Palomar</a></li>
+                    <li><a href="../pages1/165.html">Zélenchuk</a></li>
+                    <li><a href="../pages6/830.html">Shanghai</a></li>
+                    <li><a href="../pages6/831.html">Itajuba</a></li>
+                    <li><a href="../pages6/78.html">CFHT Hawai</a></li>
+                    <li><a href="../pages3/305.html">Iles canaries: THEMIS</a></li>
+                    <li><a href="../pages6/61.html">ESO</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages5/580.html">Les plus grands <br /> télescopes</a>
+                <ul>
+                      <li><a href="../pages5/580.html">Les réflecteurs</a></li>
+                      <li><a href="../pages5/581.html">Les réfracteurs</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Observatoires spatiaux</a>
+                <ul>
+                    <li><a href="../pages4/48.html">HST</a></li>
+                    <li><a href="../pages6/679.html">GAIA</a></li>
+                    <li><a href="../pages2/219.html">SOHO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+<li><a href="../pages2/258.html"><span class="police_chap">Comprendre</span> </a>
+          <ul>
+            <li><a href="../pages2/216.html">Astronomie de position</a>
+                <ul>
+                    <li><a href="../pages2/279.html">Calendriers</a></li>
+                    <li><a href="../pages3/321.html">Phénomènes <br />astronomiques</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages3/322.html">Ephémérides</a>
+                <ul>
+                    <li><a href="../pages3/370.html">Lever et coucher</a></li>
+                    <li><a href="../pages5/584.html">Positions</a></li>
+                </ul>
+            </li>
+
+                    <li><a href="../pages2/243.html">Concepts fondamentaux</a></li>
+                    <li><a href="../pages5/523.html">Constantes fondamentales</a></li>
+                    <li><a href="../pages2/259.html">Approfondir</a></li>
+                    <li><a href="../pages2/291.html">Histoire de l'astronomie</a></li>
+
+                    <li><a href="../pages2/221.html">Glossaire</a></li>
+                    <li><a href="../pages4/475.html">Enseigner</a></li>
+                    <li><a href="../pages2/201.html">Index</a></li>
+                    <li><a href="../pages1/188.html">Guide</a></li>
+
+        </ul>
+</li>
+</ul>
+  
+  
+ </header>
+
+    <br />
+
+  
+ <section>
+<!--	<div id="gauche-gauche">
+  <p>&nbsp;</p>
+	</div>-->
+	<div id="gauche">
+	 
+	     <a href="../pages4/434.html"><img id="P1" src="../images/new_image/page_precedente.png" alt="" /></a><a href="../pages4/400.html"><img id="P2" src="../images/new_image/page_suivante.png" alt="" /></a>
+	     <a href="../pages2/216.html"><img id="S1" src="../images/new_image/section_precedente.png" alt="" /></a><a href="../pages4/439.html"><img id="S2" src="../images/new_image/section_suivante.png" alt="" /></a>	
+	   	     
+	     <br />
+
+	     <a href="#ancre"><div id="plus">Haut de page</div></a> 
+ 	     <a href="../pages2/221.html"><div id="glossaire">Glossaire</div></a> 
+ 	     <a href="../pages2/201.html"><div id="index">Index</div></a> 
+ 	     <a href="../pages2/279.html"><div id="long1">Retour page Calendriers<img id="P1" src="../images/new_image/page_precedente.png" alt="" /></div></a>
+	     <a href="../pages4/400.html"><div id="long1">Fêtes légales<img id="P2" src="../images/new_image/page_suivante.png" alt="" /></div></a>
+	</div>
+
+
+
+	<div id="droite">
+<span class="fontsize">
+    <a class="LinkIn box1" title="Réduire la taille du texte du contenu" href="#"><img class="contour-print" alt="Réduire la taille du texte du contenu" onclick="changerTaille(-0.1); return false;" src="../images/new_image/dim-police.png"></a>
+    <a class="LinkIn box1" title="Aggrandir la taille du texte du contenu" href="#"><img class="contour-print" alt="Aggrandir la taille du texte du contenu" onclick="changerTaille(0.1); return false;" src="../images/new_image/aug-police.png"></a>
+    <a class="LinkIn box1" title="Imprimer cette page" href="#"><img class="contour-print" alt="Imprimer cette page" onclick="window.print(); return false;" src="../images/new_image/printer.png"></a>
+</span>
+
+ 
+  
+ <span class="fontsize-en">
+    <a class="LinkIn-en" title="English" href="../../../../../en/grandpublic/systeme/promenade-en/pages2/278.html">English</a>
+</span>
+
+	    <p id="position"><A class=" box1" HREF="../pages2/258.html">Comprendre </A>><A class=" box1"  HREF="../pages2/216.html"> Calculs astronomiques</A> > <A class=" box1"  HREF="../pages2/279.html">Calendriers</a> VI</p>
+
+
+
+  <H1>CALCUL DU JOUR JULIEN</H1>
+
+<br /><br />
+
+<SCRIPT>
+
+  var dt = new Date();
+
+  document.write("<FONT SIZE=2> " + dt.toGMTString() + "</FONT>")
+
+</SCRIPT>
+
+<FORM NAME="form">
+
+<PRE><strong class="gras">&nbsp; <FONT SIZE=+1>ENTREZ LA DATE ET L'HEURE EN TEMPS UNIVERSEL COORDONN&Eacute;&nbsp;
+
+
+
+
+
+</FONT></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jour&nbsp;:&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="nday"       SIZE=7>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mois&nbsp;:&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="nmonth"     SIZE=7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Année&nbsp;:&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="nyear" SIZE=7>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heure&nbsp;:&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="nhour"      SIZE=7 >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minutes&nbsp;:&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="nminute"    SIZE=7 >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Secondes&nbsp;:&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="nsecondes"  SIZE=7 ></PRE>
+<INPUT TYPE="button" VALUE="Nouvelle date" onClick="Newdate(this.form)"><INPUT TYPE="button" VALUE="Date courante" onClick="startdate()"><INPUT TYPE="button" VALUE="   Calcul    " ONCLICK="compute(this.form)">
+<HR><INPUT TYPE="text" NAME="result" SIZE=15 onChange="reverse(this.form)">
+
+<P><INPUT TYPE="button" VALUE="Nouveau Jour Julien" onClick="Newday(this.form)"><INPUT TYPE="button" VALUE=" Calcul inverse " onClick="reverse(this.form)"></FORM>
+<PRE><strong class="gras">Exemple&nbsp;:&nbsp;le 13/02/1998 12&nbsp;:&nbsp;00 UTC correspond au jour julien&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2450858.0</strong></PRE>
+<br /><br />
+<figcaption class="credit">Crédit&nbsp;:&nbsp;P. Rocher/G. Satre/IMCCE/CNRS</figcaption><br /><br />
+
+	</div>
+
+<br /><br />
+
+</section>
+
+
+<footer>
+  <div>
+    <a href="../pages1/166.html"> Plan du site</a>&nbsp;&nbsp;&nbsp;<a href="../pages1/189.html"> Copyright</a>
+  </div>
+</footer>
+
+    </div>
+  </BODY>
+</HTML>

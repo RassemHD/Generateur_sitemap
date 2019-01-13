@@ -1,0 +1,229 @@
+/*Corps de la page*/
+
+body {
+      background-color: white;
+      font-family:'trebuchet MS', Arial, sans serif;
+      color: black;
+      width:100%;
+}
+
+/*Pour les paragraphes/contenu des pages*/
+
+p{color:black;}
+
+section{
+	vertical-align:top;
+	display:inline-block;
+	height:1%; /*internet explorer??*/
+	overflow:scroll;
+
+}
+
+/*pour les liens internet*/
+
+.lien {
+      text-align:center;
+      font-size: 1.2em;
+      font-style:italic; /*mettre le texte en italic*/
+      font-weight: bold; /*mettre le texte en gras*/
+}
+
+
+/* Pour les figures, images*/
+
+  /* Légende*/
+figcaption{font-size:20px;}
+
+ /*figure*/
+.figure {width:100%;}
+
+  /* crédit de l'image*/
+#credit{
+	font-size:12px;
+	font-style:italic;
+}
+
+/* Tableaux*/
+
+table{font-size: 0.8em; /*police dans les lignes du tableau*/ 
+      WIDTH:100%;
+      CELLPADDING:2; 
+}
+
+table td {
+text-align:center;
+}
+
+table td {
+background-color: yellow;
+}
+
+
+/*lien web backgroud des liens lors du survol de la souris avant et après*/
+
+a:hover{
+    color: #222;
+    background: #555;
+    background: -webkit-linear-gradient( #777, #333);
+    background:    -moz-linear-gradient( #777, #333);
+    background:     -ms-linear-gradient( #777, #333);
+    background:      -o-linear-gradient( #777, #333);
+    background:         linear-gradient( #777, #333);
+}
+a:active{
+    color: #AAAAFF;
+    background: #abc;
+    background: -webkit-linear-gradient( #555, #2C2C2C);
+    background:    -moz-linear-gradient( #555, #2C2C2C);
+    background:     -ms-linear-gradient( #555, #2C2C2C);
+    background:      -o-linear-gradient( #555, #2C2C2C);
+    background:         linear-gradient( #555, #2C2C2C);
+}
+
+
+/* Construction des fleches de navigation manuellement*/
+
+span {
+      border-color : #fff;
+      border-style : solid;
+      height : 0px;
+      overflow : hidden;
+      display : inline-block;
+      margin : 8px;
+      clear : both;
+}
+/*fleche droite*/
+#s1 {
+     border-top-width : 7px;
+     border-bottom-width : 7px;
+     border-left-width : 20px;
+     border-left-color : #abc;
+}
+
+/*avance rapide fleche droite*/
+#s5 {
+     border-top-width : 7px;
+     border-bottom-width : 7px;
+     border-left-width : 40px;
+     border-left-color : #abc;
+}
+
+
+/* fleche bas*/
+#s2 {
+     border-left-width : 7px;
+     border-right-width : 7px;
+     border-top-width : 10px;
+     border-top-color : #abc;
+}
+
+/* fleche gauche*/
+#s3 {
+     border-top-width : 7px;
+     border-bottom-width : 7px;
+     border-right-width : 20px;
+     border-right-color : #abc;
+}
+
+/* avance rapide fleche gauche*/
+#s6 {
+     border-top-width : 7px;
+     border-bottom-width : 7px;
+     border-right-width : 40px;
+     border-right-color : #abc;
+}
+
+/* fleche haut*/
+#s4 {
+     border-left-width : 7px;
+     border-right-width : 7px;
+     border-bottom-width : 10px;
+     border-bottom-color : #abc;
+}
+
+/*dimension de la page*/
+
+#bloc_page{
+	   width:100%;
+	   margin: auto;
+	   margin-right:auto; 
+	   margin-left:auto;
+}
+
+
+#chemin{
+	width:100%;
+	/*background:url('separateur.png') repeat-x bottom;*/
+	display:inline-block;
+}
+
+
+/*Elements principaux de la page*/
+
+h1,nav a {
+	  font-family:Dayrom,serif;
+	  font-weight:normal;
+	  text-transform:uppercase;
+}
+
+
+/* Partie de la section*/
+
+#case1, #case2{
+		display:inline-block;
+		vertical-align:top;
+		font-size:20px;
+		width:33%;
+}
+
+
+/*Navigation*/
+
+nav{
+    display:inline-block;
+    vertical-align:top;
+    font-size:10px;
+    text-align:left;
+    position:fixed;
+    left:1%;
+    top:30%;
+    width:30%;
+}
+
+nav ul{liste-style-type:none;}
+
+nav li{
+      display: inline-block;
+      margin-left:1%;
+}
+
+nav a {
+      font-size: 2.1em; /*police du texte du navigateur*/
+      color: #AAAAFF;
+      padding-bottom: 1.5px; /* surlignement entre texte et trait*/
+      text-decoration: none;
+}
+
+/* la gestion de hover permet de savoir que losrque l'utilisateur passe sa souris*/
+
+nav a:hover {
+	    color:#760001;
+	    border-bottom:3px solid #760001;
+}
+
+/*Pour le footer*/
+
+#cadre{
+      height:1%;
+      overflow:hidden;
+}
+
+.fin{
+     color:blue;
+     float:left;
+}
+
+.fin1{
+      color:red;
+      float:right;
+}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <META NAME="Author" CONTENT="J.E. ARLOT &  N.THOUVENIN" /> 
+<!-- pour la comptabilité pour internet explorer 9-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Comprendre - Concepts fondamentaux - La mesure des distances</title>
+    <link rel="stylesheet" href="../pages1/style-dernier13.css"/>
+    <script src="../pages1/jquery-1.11.1.min.js"></script>
+    <script src="../pages1/jquery.mobile.custom.min.js"></script>
+    <script src="../pages1/script.js"></script>
+
+  <!--[if lt IE 7]>
+  <link rel="stylesheet" href="style_ie.css"/>
+  <![endif]-->
+  </HEAD>
+
+  <BODY> 
+
+    <div id="bloc_page">
+
+
+
+      <header id="ancre">
+	<a href="../pages5/51.html"><img class="image-bandeau" src="../images/new_image/bandeau.png" alt="" /></a>
+
+ 
+	 
+ 
+ 
+<ul id="menu">
+    <li>
+        <a href="../pages3/37.html"><span class="police_chap">Encyclopédie</span> </a>
+
+        <ul>
+            <li><a href="../pages1/19.html">Caractéristiques <br /> des planètes</a></li>
+
+            <li>
+                <a href="../pages1/139.html">Choisir un corps céleste<br />dans le système solaire</a>
+                <ul>
+                    <li><a href="../pages1/131.html">Soleil</a></li>
+                    <li><a href="../pages6/82.html">Mercure</a></li>
+
+                    <li><a href="../pages1/152.html">Vénus</a></li>
+                    <li><a href="../pages1/176.html">Terre</a></li>
+
+                    <li><a href="../pages1/177.html">Lune</a></li>
+                    <li><a href="../pages6/70.html">Mars</a></li>
+
+                    <li><a href="../pages5/54.html">Jupiter</a></li>
+                    <li><a href="../pages1/119.html">Saturne</a></li>
+
+                    <li><a href="../pages1/148.html">Uranus</a></li>
+                    <li><a href="../pages6/89.html">Neptune</a></li>
+
+                    <li><a href="../pages1/110.html">Pluton</a></li>
+                    <li><a href="../pages6/9.html">Astéroides</a></li>
+
+                    <li><a href="../pages2/23.html">Comètes</a></li>
+
+                </ul>
+            </li>
+            <li><a href="../pages3/376.html">Le système solaire <br /> en chiffres</a></li>
+
+            <li><a href="../pages2/240.html">Origine des noms</a></li>
+
+            <li><a href="../pages2/257.html">Classification des corps</a></li>
+        </ul>
+
+    </li>
+    <li>
+        <a href="../pages3/32.html"><span class="police_chap">Découvertes</span> </a>
+        <ul>
+            <li><a href="../pages3/312.html">Astronomes célèbres</a></li>
+
+            <li><a href="../pages1/168.html">Dates importantes</a></li>
+
+            <li>
+                <a href="../pages1/168.html">Découvertes dans <br />le système solaire</a>
+                <ul>
+                    <li>
+                        <a href="../pages3/371.html">Soleil</a>
+                        <ul>
+                            <li>
+                                <a href="../pages3/374.html">Taches solaires</a>
+                            </li>
+
+                            <li>
+                                <a href="../pages1/133.html">Eclipses solaires</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages6/83.html">Mercure</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/83.html">Avance du périhélie</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages1/155.html">Vénus</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages1/155.html">Phases</a>
+                            </li>
+                            <li>
+                                <a href="../pages1/155.html">Rotations</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages1/183.html">Terre</a>
+                        <ul>
+                            <li>
+                                <a href="../pages1/183.html">Forme</a>
+                            </li>
+
+                            <li>
+                                <a href="../pages1/183.html">Mouvement</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages6/64.html">Lune</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/64.html">Cratères</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/64.html">Surface</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages3/372.html">Mars</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages3/372.html">Surfaces</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/75.html">Canaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/76.html">Période de rotation</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/77.html">Satellites</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages5/56.html">Jupiter</a>
+                        <ul>
+                            <li>
+                                <a href="../pages5/56.html">Satellites</a>
+                            </li>
+                            <li>
+                                <a href="../pages5/57.html">Anneaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages5/58.html">Tache rouge</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages1/124.html">Saturne</a>
+                        <ul>
+                            <li>
+                                <a href="../pages1/124.html">Anneaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages2/256.html">Satellites</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/151.html">Uranus</a></li>
+                    <li>
+                        <a href="../pages6/91.html">Neptune</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/91.html">Orbitographie de <br />la planète</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/92.html">Satellites</a>
+                            </li>
+                            <li>
+                                <a href="../pages1/180.html">Anneaux</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/112.html">Pluton</a></li>
+
+                    <li><a href="../pages1/190.html">Astéroides</a></li>
+
+                    <li><a href="../pages2/25.html">Comètes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+
+ <a href="../pages1/164.html"><span class="police_chap">Espace</span> </a>
+
+<ul>
+            <li><a href="../pages2/217.html">Historique</a></li>
+
+            <li>
+                <a href="../pages2/22.html">Site de lancement</a>
+                <ul>
+                    <li><a href="../pages1/18.html">Cap Kennedy</a></li>
+                    <li><a href="../pages6/60.html">Kourou</a></li>
+                    <li><a href="../pages1/14.html">Baikonour</a></li>
+                    <li><a href="../pages6/762.html">Autres centres spatiaux</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages2/217.html">Missions spatiales</a>
+                <ul>
+                    <li><a href="../pages5/5.html">Apollo</a></li>
+                    <li><a href="../pages6/69.html">Mariner</a></li>
+
+                    <li><a href="../pages1/159.html">Viking</a></li>
+                    <li><a href="../pages1/160.html">Voyager</a></li>
+
+                    <li><a href="../pages4/41.html">Galileo</a></li>
+                    <li><a href="../pages2/219.html">Soho</a></li>
+
+                    <li><a href="../pages6/672.html">Mars Express</a></li>
+                    <li><a href="../pages2/222.html">Cassini/Huygens</a></li>
+                    <li><a href="../pages6/669.html">Luna</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+
+
+    </li>
+
+    <li>
+        <a href="../pages1/114.html"><span class="police_chap">Observatoires</span> </a>
+
+        <ul>
+
+            <li>
+                <a href="../pages6/95.html">France</a>
+                <ul>
+                    <li><a href="../pages1/103.html">Observatoire de Paris</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages2/245.html">L'Institut de Mécanique <br />Céleste et des Calculs <br />en Ephémérides/IMCCE</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/86.html">Observatoire de Meudon</a>
+                            </li>
+                            <li>
+                                <a href="../pages2/281.html">Nançay</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/107.html">Pic du Midi</a></li>
+                    <li><a href="../pages6/96.html">Haute Provence</a></li>
+                    <li><a href="../pages2/267.html">Besançon</a></li>
+                    <li><a href="../pages2/268.html">Bordeaux</a></li>
+                    <li><a href="../pages2/269.html">Côte d'Azur</a></li>
+                    <li><a href="../pages2/270.html">Grenoble</a></li>
+                    <li><a href="../pages2/274.html">Lyon</a></li>
+                    <li><a href="../pages2/271.html">Marseille</a></li>
+                    <li><a href="../pages2/272.html">Strasbourg</a></li>
+                    <li><a href="../pages2/273.html">Toulouse</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages6/833.html">Europe</a>
+                <ul>
+                    <li><a href="../pages2/247.html">Greenwich</a></li>
+                    <li><a href="../pages6/822.html">Bruxelles</a></li>
+                    <li><a href="../pages6/823.html">Turin</a></li>
+                    <li><a href="../pages6/824.html">Castel Gandolfo</a></li>
+                    <li><a href="../pages6/825.html">Catane</a></li>
+                    <li><a href="../pages6/826.html">San Fernando</a></li>
+                    <li><a href="../pages6/827.html">Bucarest</a></li>
+                    <li><a href="../pages6/828.html">Poznan</a></li>
+                    <li><a href="../pages6/823.html">Nikolaev</a></li>
+                    <li><a href="../pages2/248.html">Pulkovo</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages2/246.html">Autres</a>
+                <ul>
+                    <li><a href="../pages2/249.html">Washington D.C.</a></li>
+                    <li><a href="../pages6/99.html">Mont Palomar</a></li>
+                    <li><a href="../pages1/165.html">Zélenchuk</a></li>
+                    <li><a href="../pages6/830.html">Shanghai</a></li>
+                    <li><a href="../pages6/831.html">Itajuba</a></li>
+                    <li><a href="../pages6/78.html">CFHT Hawai</a></li>
+                    <li><a href="../pages3/305.html">Iles canaries: THEMIS</a></li>
+                    <li><a href="../pages6/61.html">ESO</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages5/580.html">Les plus grands <br /> télescopes</a>
+                <ul>
+                      <li><a href="../pages5/580.html">Les réflecteurs</a></li>
+                      <li><a href="../pages5/581.html">Les réfracteurs</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Observatoires spatiaux</a>
+                <ul>
+                    <li><a href="../pages4/48.html">HST</a></li>
+                    <li><a href="../pages6/679.html">GAIA</a></li>
+                    <li><a href="../pages2/219.html">SOHO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+<li><a href="../pages2/258.html"><span class="police_chap">Comprendre</span> </a>
+          <ul>
+            <li><a href="../pages2/216.html">Astronomie de position</a>
+                <ul>
+                    <li><a href="../pages2/279.html">Calendriers</a></li>
+                    <li><a href="../pages3/321.html">Phénomènes <br />astronomiques</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages3/322.html">Ephémérides</a>
+                <ul>
+                    <li><a href="../pages3/370.html">Lever et coucher</a></li>
+                    <li><a href="../pages5/584.html">Positions</a></li>
+                </ul>
+            </li>
+
+                    <li><a href="../pages2/243.html">Concepts fondamentaux</a></li>
+                    <li><a href="../pages5/523.html">Constantes fondamentales</a></li>
+                    <li><a href="../pages2/259.html">Approfondir</a></li>
+                    <li><a href="../pages2/291.html">Histoire de l'astronomie</a></li>
+
+                    <li><a href="../pages2/221.html">Glossaire</a></li>
+                    <li><a href="../pages4/475.html">Enseigner</a></li>
+                    <li><a href="../pages2/201.html">Index</a></li>
+                    <li><a href="../pages1/188.html">Guide</a></li>
+
+        </ul>
+</li>
+</ul>
+  
+  
+ </header>
+
+    <br />
+
+  
+ <section>
+<!--	<div id="gauche-gauche">
+  <p>&nbsp;</p>
+	</div>-->
+	<div id="gauche">
+	 
+	     <a href="../pages3/316.html"><img id="P1" src="../images/new_image/page_precedente.png" alt="" /></a><a href="../pages3/325.html"><img id="P2" src="../images/new_image/page_suivante.png" alt="" /></a>
+	     <a href="../pages2/243.html"><img id="S1" src="../images/new_image/section_precedente.png" alt="" /></a><a href="../pages3/325.html"><img id="S2" src="../images/new_image/section_suivante.png" alt="" /></a>	
+	   	     
+	     <br />
+
+	     <a href="#ancre"><div id="plus">Haut de page</div></a> 
+ 	     <a href="../pages2/221.html"><div id="glossaire">Glossaire</div></a> 
+ 	     <a href="../pages2/201.html"><div id="index">Index</div></a> 
+	     <a href="../pages2/243.html"><div id="long1">Concepts fondamentaux<img id="P1" src="../images/new_image/page_precedente.png" alt="" /></div></a>
+	     <a href="../pages3/325.html"><div id="long1">Echelles de temps<img id="P2" src="../images/new_image/page_suivante.png" alt="" /></div></a>
+	</div>
+
+
+
+	<div id="droite">
+<span class="fontsize">
+    <a class="LinkIn box1" title="Réduire la taille du texte du contenu" href="#"><img class="contour-print" alt="Réduire la taille du texte du contenu" onclick="changerTaille(-0.1); return false;" src="../images/new_image/dim-police.png"></a>
+    <a class="LinkIn box1" title="Aggrandir la taille du texte du contenu" href="#"><img class="contour-print" alt="Aggrandir la taille du texte du contenu" onclick="changerTaille(0.1); return false;" src="../images/new_image/aug-police.png"></a>
+    <a class="LinkIn box1" title="Imprimer cette page" href="#"><img class="contour-print" alt="Imprimer cette page" onclick="window.print(); return false;" src="../images/new_image/printer.png"></a>
+</span>
+
+ 
+  
+ <span class="fontsize-en">
+    <a class="LinkIn-en" title="English" href="../../../../../en/grandpublic/systeme/promenade-en/pages3/324.html">English</a>
+</span>
+
+	    <p id="position"><A class=" box1" HREF="../pages2/258.html">Comprendre </A>><A class=" box1"  HREF="../pages2/243.html"> Concepts fondamentaux </A>><A class=" box1" HREF="../pages3/324.html"> Mesures II</A></p>
+
+
+<H1>LA MESURE DES DISTANCES</H1>
+
+
+<br /><br />
+
+<p><a class="box1" href="#mesureterre">La mesure de la Terre</a>
+<br /><a class="box1" href="#mesurelune">Mesure de la distance Terre-Lune et de la taille de la Lune</a>
+<br /><a class="box1" href="#disttersol">Mesure de la distance Terre-Soleil et Terre-Planètes</a>
+<br /><a class="box1" href="#mesuresetoiles">Mesure des distances des étoiles</a>
+<br /><a class="box1" href="#parallaxeann">Parallaxe annuelle</a>
+<br /><a class="box1" href="#luminetoiles">Luminosité des étoiles</a>
+<br /><a class="box1" href="#expansuniv">Expansion de l'univers</a></p>
+<br />
+</p>
+
+
+
+<p>Toutes les mesures que l'on peut effectuer sur le ciel sont des mesures
+d'angles. Sur la sphère céleste, tous les astres semblent
+se trouver à la m&ecirc;me distance de la Terre. La Terre elle-m&ecirc;me
+semble plate et immobile. Comment déterminer la forme de la Terre,
+comment mesurer sa taille et comment mesurer la distance à la Terre
+des astres que nous observons&nbsp;?&nbsp;Pour cela, nous devrons faire un peu d'histoire,
+car l'astronomie progresse pas à pas par "approximations successives".</p>
+
+<hr>
+
+<H2><a NAME="mesureterre"></a>La mesure de la Terre</H2>
+
+<p>Comment mesurer la Terre et constater qu'elle est ronde&nbsp;?&nbsp;Sa rotondité
+est facilement compréhensible et deux faits avaient amené
+les astronomes de l'antiquité à admettre cette rotondité.
+D'abord, lors de l'observation des éclipses de Lune, l'ombre de
+la Terre est circulaire. Mais cette constatation pouvait aussi bien signifier
+que la Terre était plate avec une forme de disque. C'est la disparition
+progressive des navires sous l'horizon qui suggère bien que la Terre
+est ronde. Comment maintenant mesurer le rayon de la Terre&nbsp;&nbsp;?&nbsp;</p>
+
+<p>La première mesure a été celle d'Eratosthène
+(vers 285-194 avant J.C.) durant l'antiquité grecque. Il avait constaté
+que les rayons du Soleil étaient parallèles, du moins que
+le Soleil était très loin sinon à l'infini. Il avait
+constaté que le jour du solstice, à midi, les objets n'avaient
+pas d'ombre à Syène (aujourd'hui Assouan) et que l'on pouvait
+observer le Soleil du fond d'un puits. Ce phénomène n'avait
+pas lieu à Alexandrie 800 km plus au Nord. Eratosthène mesura
+donc l'ombre portée d'un b&acirc;ton à Alexandrie le jour
+du solstice . Il lui fallait aussi mesurer la distance Alexandrie-Syène
+(5000 stades) ce qui n'allait pas de soi à cette époque.
+Cette mesure n'était pas interpr&ecirc;tée comme un calcul
+de triangulation prouvant que le Soleil était proche car il fallait
+se déplacer dans la direction Nord-Sud pour constater un changement
+de direction du Soleil. Une mesure à la m&ecirc;me heure solaire
+locale (la seule disponible à l'époque) pour des lieux situés
+sur une ligne Est-Ouest n'aurait rien donnée (d'o&ugrave; la supposition
+que les rayons du Soleil étaient parallèles). Eratosthène
+ne se trompa que d'un centième sur la taille de la Terre. Deux cents
+ans avant lui, Anaxagore avait fait la m&ecirc;me mesure en supposant que
+la Terre était plate, c'est-à-dire son rayon infini&nbsp;:&nbsp;il était
+naturellement arrivé au résultat que le Soleil était
+environ à 6500 kilomètres de la Terre.</p>
+
+
+<p class="centrer"><img class="image3" SRC="../images/gif5/554.gif" alt=""></p>
+<figcaption class="credit">Principe des premières mesures de la taille de la Terre&nbsp;:&nbsp;dans les deux cas ci-dessus le calcul est correct mais la mesure à gauche est 
+faite avec une hypothèse fausse&nbsp;et celle de droite avec une hypothèse juste et la valeur ainsi obtenue est très proche de la réalité</figcaption><br /><br />
+
+
+
+<H2><a NAME="mesurelune"></a>Mesure de la distance Terre-Lune et de la taille de la Lune</H2>
+
+<p>La première mesure de la taille de la Lune et de la distance
+Terre-Lune a été réalisée dans l'antiquité
+au moyen de l'observation des éclipses. L'observation des éclipses
+de Lune montre la largeur de l'ombre de la Terre sur la Lune et on voit
+que le rayon de l'ombre de la terre est de 2,5 diamètres lunaires
+au niveau de la Lune. Or, lors d'une éclipse de Soleil, la surface
+terrestre est au sommet du cône d'ombre puisque la zone de la Terre
+dans l'ombre est petite (les diamètres apparents de la Lune et du
+Soleil sont quasi-identiques). L'ombre de la Lune s'est donc rétrécie
+d'un diamètre lunaire après la distance Terre-Lune. Il doit
+en &ecirc;tre de m&ecirc;me pour l'ombre de la Terre sur la Lune. Donc
+la Terre fait 2,5+1=3,5 diamètres lunaires. Connaissant le diamètre
+terrestre on en déduit le diamètre lunaire en kilomètres.
+L'angle selon lequel on voit la Lune étant d'un demi-degré
+(1/110 radian), la distance Terre-Lune est donc de 110 diamètres
+lunaires soit 60 rayons terrestres soit 384 000 km.</p>
+
+
+<p class="centrer"><img class="image3" SRC="../images/jpg5/555.jpg" alt=""></p>
+<figcaption class="credit">Principe de la mesure de la taille de la Lune&nbsp;et de la distance Terre-Lune gr&acirc;ce aux éclipses</figcaption><br /><br />
+
+
+<p>Disposant d'instruments de visée plus performants, les astronomes
+vont utiliser la triangulation pour mesurer la distance Terre-Lune en utilisant
+l'effet de parallaxe pour deux points distants à la surface de la Terre.</p>
+<br />&nbsp;
+
+<p class="centrer"><img class="image3" SRC="../images/jpg5/556.jpg" alt=""></p>
+<figcaption class="credit">Principe de la mesure de la distance Terre-Lune&nbsp;par triangulation</figcaption><br /><br />
+
+
+<p>Aujourd'hui, on mesure la distance Terre-Lune avec des tirs laser sur
+un réflecteur posé à la surface de la Lune avec une
+précision de quelques centimètres.</p>
+
+<p class="centrer"><a NAME="disterlu"></a><img class="image3" SRC="../images/jpg4/479.jpg" alt=""> <br />
+<figcaption class="credit">La distance Terre-Lune avec la Terre et la Lune à la m&ecirc;me échelle.</figcaption><br /><br />
+
+<H2><a NAME="disttersol"></a>Mesure de la distance Terre-Soleil et Terre-Planètes</H2>
+
+<p>La méthode de triangulation précédente peut bien
+s&ucirc;r &ecirc;tre appliquée aux autres corps du système
+solaire. Mais pour le Soleil, c'est très difficile&nbsp;:&nbsp;il n'est pas
+facile à observer et il est beaucoup plus loin que la Lune. Pour
+le Soleil et les objets du système solaire éloignés,
+nous verrons que nous aurons besoin d'un modèle théorique
+pour mesurer certaines distances et en déduire celles qui ne sont
+pas accessibles directement à la mesure. Les <a class="box1" href="315.html">lois
+de Kepler</a> et la <a class="box1" href="315.html#mecaceldist">mécanique
+céleste</a> seront nécessaires pour la détermination
+des distances dans le système solaire.</p>
+
+<H2><a NAME="mesuresetoiles"></a>Mesure des distances des étoiles</H2>
+
+<H3><a NAME="parallaxeann"></a>Parallaxe annuelle</H3>
+
+<p>Les distances à mesurer deviennent très grandes et la
+distance entre deux lieux sur Terre n'est pas suffisante pour faire de
+la triangulation. On va utiliser la parallaxe annuelle, c'est-à-dire
+les différentes positions de la Terre sur son orbite.</p>
+<br />&nbsp;
+
+
+<p class="centrer"><img class="image3" SRC="../images/jpg5/557.jpg" alt=""></p>
+<figcaption class="credit">Mesure de la distance Terre-étoile gr&acirc;ce à la parallaxe due au mouvement de la Terre autour du Soleil</figcaption><br /><br />
+
+
+<p>Cette mesure repose donc aussi sur la triangulation et la parallaxe
+mais à 6 mois d'intervalle.</p>
+
+<H3><a NAME="luminetoiles"></a>Luminosité des étoiles</H3>
+
+<p>Une autre méthode pour mesurer la distance des étoiles
+est de mesurer leur luminosité. En effet, pour deux étoiles
+de m&ecirc;me éclat, la plus éloignée nous paraîtra
+plus faible que la plus proche. La luminosité apparente varie comme
+le carré de la distance&nbsp;:&nbsp;une étoile deux fois plus loin est
+quatre fois plus faible. Mais pour déduire la distance d'une étoile
+de son éclat apparent, il faut connaître la distance d'une
+étoile de référence. On classe donc les étoiles
+par type&nbsp;:&nbsp;spectre, variabilité de façon à ce que deux
+étoiles de m&ecirc;me type émettent la m&ecirc;me quantité
+de lumière. Si une étoile d'un certain type est suffisamment
+proche de la Terre pour que sa distance puisse &ecirc;tre mesurée
+par sa parallaxe annuelle, alors, la mesure de l'éclat apparent
+des étoiles de m&ecirc;me type permettra d'en déduire leur
+distance à la Terre.</p>
+
+<H3><a NAME="expansuniv"></a>Expansion de l'univers</H3>
+
+<p>L'expansion de l'univers nous donne aussi des moyens pour mesurer les
+distances des objets très lointains. En effet, le principe de l'expansion
+de l'univers affirme que les galaxies s'éloignent les unes des autres.
+Ce mouvement de fuite est donc d'autant plus important que l'objet est
+loin de la Terre. L'analyse spectrale des objets permet de déterminer
+un décalage vers le rouge pour les objets qui s'éloignent
+de nous, proportionnel à leur vitesse et donc proportionnel à
+leur distance à la Terre. Encore une fois, il faudra étalonner
+la distance de certains objets pour connaître d'autres distances
+d'autres objets.</p>
+
+<p>On voit, au travers de ces dernières techniques qui donnent très
+schématiquement des méthodes de détermination des
+distances des objets lointains, qu'à partir de mesures d'angles
+sur la sphère céleste, nous pouvons en déduire la
+distance de la Lune (proche) jusqu'à celles des galaxies les plus
+éloignées.</p>
+
+<p class="credit">Crédit&nbsp;:&nbsp;J.E. Arlot/IMCCE, observatoire de Paris</p>
+	</div>
+
+<br /><br />
+
+</section>
+
+
+<footer>
+
+  <div>
+    <a href="../pages1/166.html"> Plan du site</a>&nbsp;&nbsp;&nbsp;<a href="../pages1/189.html"> Copyright</a>
+  </div>
+</footer>
+
+    </div>
+  </BODY>
+</HTML>

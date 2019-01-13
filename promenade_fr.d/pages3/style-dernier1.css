@@ -1,0 +1,551 @@
+/*Elements principaux de la page*/
+
+
+  /*Corps de la page complète*/ 
+
+html{
+/*      background-image:url('../images/new_image/fond.png');
+      background-repeat:repeat;*/
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top:-10px;
+}
+
+  /*Corps de la page du contenu*/ 
+
+body {
+      background-image:url('../images/new_image/fond.png');
+      background-repeat:repeat;
+      background-color: white; /* a échanger en fonction du chapitre*/
+      font-family:'trebuchet MS', Arial, sans serif;
+      color: black;
+      width:1200px;
+      margin:0px 100px 0px 100px;
+}
+
+  /* Entete */
+
+/* header{border:2px solid blue;} */
+
+header img {
+	    width:1200px;	  
+}
+
+header{
+	/*position:fixed;*/
+	top:0px;
+	width:1200px;
+	height:160px;
+	/* border:2px solid red; */
+}
+
+/* Différentes polices */
+
+  /*police des titres*/
+
+h1{
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align:center;
+}
+
+/* Police pour les pages de gros chapitres */
+
+.chapitre{
+	  font-style:justify;
+	  font-size:1.8em;
+}
+  /*Police pour les crédits des images*/
+
+.credit{
+	font-size:0.8em;
+	font-style:italic;
+}
+
+  /*Police pour écritue en italique*/
+
+.italique{
+font-style:italic;
+}
+
+  /*Permet de positionner le chemin sur lequel nous nous trouvons*/
+
+#position{
+	  text-align:left; 
+	  margin-left:10px;
+	  font-size:0.6em;
+	  font-style:italic;
+	  text-decoration: none;
+
+}
+
+  /*Tableau affiché sur la page*/
+.tab_page{
+	 width:400px;
+	 border-collapse:collapse;
+	 font-size:1.2em; /* police a l'intérieur des tableaux crees*/
+	 text-align:center;
+}
+
+.tab_page td{
+	    border-collapse:collapse;
+	    border:0; /*bordure de XX px pour les colones, ici aucune*/
+/* 	    background-color:#EDEBB7; */
+}
+.tab_page tr{
+	    border:0; /*bordure de XX px pour les lignes, ici aucune*/
+
+}
+
+  /*Couleur différentes sur une lignes sur deux du tableau*/
+
+table tr:nth-child(even){background-color:red;}
+
+table tbody tr:nth-child(even){background-color:#ebd6ba;}
+
+table tbody tr:nth-child(odd){
+			      background-color:#c7ae96;
+			      color:black;
+}
+
+
+/*Boutons a gauche de la page*/
+
+  /* Boutons du player */
+
+#S1,#S2,#P1,#P2{
+		margin:0;
+		padding:0;
+		border:0;
+}
+
+  /* Boutons divers sur la gauche */
+
+#animation, #choix_corps, #plus, #transverse{
+					      margin:0;
+					      padding:0;
+					      border:0;
+}
+
+  /* Pour image du bandeau */
+.image{
+      display:block;
+      margin:0;
+      padding:0;
+      border:0;
+}
+
+  /* Pour image du bouton haut de page */
+
+.image-up{
+      display:block;
+      margin:0;
+      /* padding:-20px -20px-20px -20px; */
+      width:20px;
+      height:20px;
+      border:0;
+}
+
+
+/*dimension du contenu de la page*/
+
+#bloc_page{
+	   width:1200px;
+	  border:2px solid black;
+	  margin-top:10px;
+	  /*position:absolute;
+	  top:150px;*/
+	  /* margin-left: 100px;
+	   margin-right: 100px;*/
+}
+
+
+
+/* Background du menu déroulant */
+
+#menu {
+	background: -webkit-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -moz-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -ms-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -o-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+}
+
+
+/*Navigation Navigateur*/
+
+nav{
+    background-image:url('../images/new_image/barre_menus.png');
+    width:1200px;
+    margin: auto;
+    letter-spacing: 0.5px;
+    position:absolute;
+    -webkit-box-shadow:0 0 10px black;
+    -moz-box-shadow:0 0 10px black;
+    -o-box-shadow:0 0 10px black;
+    box-shadow:0 0 10px black;
+/*	  -webkit-box-shadow:3px 3px 3px black;
+	  -moz-box-shadow:3px 3px 3px black;
+	  -o-box-shadow:3px 3px 3px black;
+	  box-shadow:3px 3px 3px black;*/
+/*     background-color:rgba(47,36,30,1); */
+    display:inline-block;
+    vertical-align:top;
+/*     font-size:25px; */
+}
+
+nav ul{list-style-type:none;}
+
+nav li{display: inline-block;}
+
+
+nav a {
+      display:inline-block;
+      /*font-size: 0.8em;*/ /*police du texte du navigateur*/
+      font-weight:bold;
+      text-shadow:1px 1px black;
+      color: white;
+      padding-bottom: 1.5px; /* surlignement entre texte et trait*/
+      text-decoration: none;
+}
+/*****************************************************/
+
+
+/* Main menu */
+
+#menu{
+      width: 100%;
+      margin: 0;
+      padding: 2px 0 0 0;
+      list-style: none;  
+      background-image:url('../images/new_image/barre_menus.png');
+      -webkit-box-shadow:0 0 10px black;
+      -moz-box-shadow:0 0 10px black;
+      -o-box-shadow:0 0 10px black;
+      box-shadow:0 0 10px black;	
+}
+
+#menu li{
+	float: left;
+	padding: 0 0 5px 0;
+	position: relative;
+	line-height: 0;
+}
+
+#menu a{
+	float: left;
+	height: 30px;
+	padding: 0 40px;
+	color: #fff;
+	font: bold 16px/29px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+/*couleur ecriture survol souris navigateur*/
+#menu li:hover > a{
+		   color:rgba(235,214,186,0.8);
+}
+
+/* IE6 */
+*html #menu li a:hover {
+			color:rgba(235,214,186,0.8);
+}
+
+#menu li:hover > ul{
+	display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;    
+	  display: none;
+	  position: absolute;
+	  top: 35px;
+	  left: 0;
+	  z-index: 99999;    
+	  background: rgba(37,28,2,1);
+	  -moz-box-shadow: 0 0 2px rgba(255,255,255,.5);
+	  -webkit-box-shadow: 0 0 2px rgba(255,255,255,.5);
+	  box-shadow: 0 0 2px rgba(255,255,255,.5);	
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+}
+
+/*reglage de la position des sous menus entre eux*/
+#menu ul ul{
+	    top: 0;
+	    left: 220px;
+}
+
+#menu ul li{
+	    float: none;
+	    margin: 0;
+	    padding: 0;
+	    display: block;  
+	    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+	    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+	    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+			box-shadow: none;    
+}
+
+/*reglage des dimensions de la boites du sous menu*/
+
+#menu ul a{    
+	    padding: 10px;
+	    height: 20px;
+	    width: 200px;
+	    height: auto;
+	    line-height: 1;
+	    display: block;
+	    white-space: nowrap;
+	    float: none;
+	    text-transform: none;
+}
+
+ /* IE6 */
+*html #menu ul a{    
+		 height: 20px;
+}
+
+/* IE7 */
+*:first-child+html #menu ul a{    
+			      height: 20px;
+}
+
+#menu ul a:hover{
+		  background:rgba(37,28,21,0.2);
+}
+
+#menu ul li:first-child > a{
+			    -moz-border-radius: 5px 5px 0 0;
+			    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child > a:after{
+				  content: '';
+				  position: absolute;
+				  left: 100px;
+				  top: -8px;
+				  width: 0;
+				  height: 0;
+				  border-left: 5px solid transparent;
+				  border-right: 5px solid transparent;
+				  border-bottom: 8px solid #444;
+}
+
+#menu ul ul li:first-child a:after{
+				    left: -8px;
+				    top: 12px;
+				    width: 0;
+				    height: 0;
+				    border-left: 0;	
+				    border-bottom: 5px solid transparent;
+				    border-top: 5px solid transparent;
+				    border-right: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+				      border-bottom-color: #A5917D; 
+}
+
+#menu ul ul li:first-child a:hover:after{
+					  border-right-color: #A5917D; 
+					  border-bottom-color: transparent; 	
+}
+
+#menu ul li:last-child > a{
+			    -moz-border-radius: 0 0 5px 5px;
+			    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after {
+	      visibility: hidden;
+	      display: block;
+	      font-size: 0;
+	      content: " ";
+	      clear: both;
+	      height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+
+/*****************************************************/
+
+/* pour les infos bulle lors du passage de la souris*/
+
+/*a{
+  color:blue;
+  text-shadow:0 -1px 0 black;
+}*/
+
+
+
+
+/*Contenu de la page a gauche*/
+
+#gauche{
+	/* position:fixed; */
+	width:215px;
+	/*height:800px;*/
+	display:inline-block;
+	/*background-image:url('../images/new_image/fond.png');
+	background-repeat:repeat;*/
+	border:1px solid black;
+	background:url('../images/new_image/barre_menus.png') no-repeat;
+	background-size: 215px 400px;
+	/*background: -webkit-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -moz-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -ms-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -o-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);*/
+	vertical-align:top;
+	-webkit-box-shadow:0 0 10px black;
+	-moz-box-shadow:0 0 10px black;
+	-o-box-shadow:0 0 10px black;
+	box-shadow:0 0 10px black;
+}
+
+/* bouton sur la gauche de la page pour la navigation*/
+
+#plus, #transversal, #animation, #choix_corps{
+					      display:inline-block;
+					      background-repeat:no-repeat;
+					      width:200px;
+					      height:35px;
+					      border:0;
+					      font-family:arial;
+					      color:#fff;
+					      font-weight:bold;
+					      font-size: 0.8em;
+					      padding:8px;
+					      margin-left:8px;
+}
+
+/*Couleur lors du survol de la souris*/
+
+#plus:hover {color:rgba(235,214,186,0.8);}
+#transversal:hover {color:rgba(235,214,186,0.8);}
+#animation:hover {color:rgba(235,214,186,0.8);}
+#choix_corps:hover {color:rgba(235,214,186,0.8);}
+
+/*background des boutons sur navigateur à droite*/
+
+#plus{background-image:url('../images/new_image/bouton_savoir_plus.png');}
+
+#transversal{background-image:url('../images/new_image/bouton_transversalite.png');}
+
+#animation{background-image:url('../images/new_image/bouton_animation.png');}
+
+#choix_corps{background-image:url('../images/new_image/bouton_choix_corps.png');}
+
+
+/*Contenu de la page a droite*/
+#droite{
+	width:950px;
+	display:inline-block;
+	border:2px solid black;
+	-webkit-box-shadow:0 0 10px black;
+	-moz-box-shadow:0 0 10px black;
+	-o-box-shadow:0 0 10px black;
+	box-shadow:0 0 10px black;
+	vertical-align:top;
+	margin-left:10px;
+	padding-left:10px;
+}
+
+/* Dans le cadre de droite c'est la première section */
+
+#premier{
+	width:450px;
+	display:inline-block;
+	/* border:2px solid green; */
+	vertical-align:top;
+}
+
+/* Dans le cadre de droite c'est la deuxième section */
+
+#deuxieme{
+	  width:450px;
+	  display:inline-block;
+	  /* border:2px solid green; */
+	  vertical-align:top;
+}
+
+
+/*bouton haut de page*/
+.bouton{
+	display:inline-block;
+	background-image:url('../images/new_image/barre_menus.png');
+	position: fixed;
+	color: white;
+	cursor: pointer;
+	display:inline-bloc;
+	border: solid 1px black;
+	margin-left:-23px;
+	margin-bottom:200px;
+	padding:1px;
+	-webkit-box-shadow:0 0 10px black;
+	-moz-box-shadow:0 0 10px black;
+	-o-box-shadow:0 0 10px black;
+	box-shadow:0 0 10px black;
+	-webkit-border-radius:8px 8px 0 0; /*permet l'arrondi lissé sur les menus*/
+	-moz-border-radius:8px 8px 8px 8px;
+	border-radius:8px 8px 8px 8px;
+	background: -webkit-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -moz-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -ms-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -o-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+}
+
+/*Couleur lors du survol de la souris pour le bouton haut de page*/
+
+.bouton:hover {color:rgba(235,214,186,0.8);}
+
+/* Pied de page */
+
+footer{
+	display:inline-block;
+	background-image:url('../images/new_image/barre_menus.png');
+	text-align:right;
+	width:1196px;
+	border:2px solid black;
+	-webkit-box-shadow:0 0 10px black;
+	-moz-box-shadow:0 0 10px black;
+	-o-box-shadow:0 0 10px black;
+	box-shadow:0 0 10px black;
+	background: -webkit-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -moz-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -ms-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: -o-linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+	background: linear-gradient(rgb(47,36,30) 0%, rgb(165,145,125) 100%);
+}
+
+  /* Police des liens dans le footer */
+
+footer a{
+	  color: white;
+	  font-size: 0.9em;
+}
+
+/*Couleur lors du survol des liens de la souris pour le bandeau du pied de page*/
+
+footer a:hover{color:rgba(235,214,186,0.8);}
+
+
+/*#gauche,#droite{position:absolute;}
+#gauche {width:20%;}
+#droite{width:80%;}*/

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <META NAME="Author" CONTENT="J.E. ARLOT &  N.THOUVENIN" />
+    <META NAME="KeyWords" CONTENT="lois kepler">
+<!-- pour la comptabilité pour internet explorer 9-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <TITLE>Comprendre - Concepts fondamentaux - Lois de Kepler</TITLE>
+    <link rel="stylesheet" href="../pages1/style-dernier13.css"/>
+    <script src="../pages1/jquery-1.11.1.min.js"></script>
+    <script src="../pages1/jquery.mobile.custom.min.js"></script>
+    <script src="../pages1/script.js"></script>
+
+  <!--[if lt IE 7]>
+  <link rel="stylesheet" href="style_ie.css"/>
+  <![endif]-->
+  </HEAD>
+
+<BODY>
+
+
+    <div id="bloc_page">
+
+
+
+      <header id="ancre">
+	<a href="../pages5/51.html"><img class="image-bandeau" src="../images/new_image/bandeau.png" alt="" /></a>
+
+ 
+	 
+ 
+ 
+<ul id="menu">
+    <li>
+        <a href="../pages3/37.html"><span class="police_chap">Encyclopédie</span> </a>
+
+        <ul>
+            <li><a href="../pages1/19.html">Caractéristiques <br /> des planètes</a></li>
+
+            <li>
+                <a href="../pages1/139.html">Choisir un corps céleste<br />dans le système solaire</a>
+                <ul>
+                    <li><a href="../pages1/131.html">Soleil</a></li>
+                    <li><a href="../pages6/82.html">Mercure</a></li>
+
+                    <li><a href="../pages1/152.html">Vénus</a></li>
+                    <li><a href="../pages1/176.html">Terre</a></li>
+
+                    <li><a href="../pages1/177.html">Lune</a></li>
+                    <li><a href="../pages6/70.html">Mars</a></li>
+
+                    <li><a href="../pages5/54.html">Jupiter</a></li>
+                    <li><a href="../pages1/119.html">Saturne</a></li>
+
+                    <li><a href="../pages1/148.html">Uranus</a></li>
+                    <li><a href="../pages6/89.html">Neptune</a></li>
+
+                    <li><a href="../pages1/110.html">Pluton</a></li>
+                    <li><a href="../pages6/9.html">Astéroides</a></li>
+
+                    <li><a href="../pages2/23.html">Comètes</a></li>
+
+                </ul>
+            </li>
+            <li><a href="../pages3/376.html">Le système solaire <br /> en chiffres</a></li>
+
+            <li><a href="../pages2/240.html">Origine des noms</a></li>
+
+            <li><a href="../pages2/257.html">Classification des corps</a></li>
+        </ul>
+
+    </li>
+    <li>
+        <a href="../pages3/32.html"><span class="police_chap">Découvertes</span> </a>
+        <ul>
+            <li><a href="../pages3/312.html">Astronomes célèbres</a></li>
+
+            <li><a href="../pages1/168.html">Dates importantes</a></li>
+
+            <li>
+                <a href="../pages1/168.html">Découvertes dans <br />le système solaire</a>
+                <ul>
+                    <li>
+                        <a href="../pages3/371.html">Soleil</a>
+                        <ul>
+                            <li>
+                                <a href="../pages3/374.html">Taches solaires</a>
+                            </li>
+
+                            <li>
+                                <a href="../pages1/133.html">Eclipses solaires</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages6/83.html">Mercure</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/83.html">Avance du périhélie</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages1/155.html">Vénus</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages1/155.html">Phases</a>
+                            </li>
+                            <li>
+                                <a href="../pages1/155.html">Rotations</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages1/183.html">Terre</a>
+                        <ul>
+                            <li>
+                                <a href="../pages1/183.html">Forme</a>
+                            </li>
+
+                            <li>
+                                <a href="../pages1/183.html">Mouvement</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages6/64.html">Lune</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/64.html">Cratères</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/64.html">Surface</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages3/372.html">Mars</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages3/372.html">Surfaces</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/75.html">Canaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/76.html">Période de rotation</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/77.html">Satellites</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages5/56.html">Jupiter</a>
+                        <ul>
+                            <li>
+                                <a href="../pages5/56.html">Satellites</a>
+                            </li>
+                            <li>
+                                <a href="../pages5/57.html">Anneaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages5/58.html">Tache rouge</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../pages1/124.html">Saturne</a>
+                        <ul>
+                            <li>
+                                <a href="../pages1/124.html">Anneaux</a>
+                            </li>
+                            <li>
+                                <a href="../pages2/256.html">Satellites</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/151.html">Uranus</a></li>
+                    <li>
+                        <a href="../pages6/91.html">Neptune</a>
+                        <ul>
+                            <li>
+                                <a href="../pages6/91.html">Orbitographie de <br />la planète</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/92.html">Satellites</a>
+                            </li>
+                            <li>
+                                <a href="../pages1/180.html">Anneaux</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/112.html">Pluton</a></li>
+
+                    <li><a href="../pages1/190.html">Astéroides</a></li>
+
+                    <li><a href="../pages2/25.html">Comètes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+
+ <a href="../pages1/164.html"><span class="police_chap">Espace</span> </a>
+
+<ul>
+            <li><a href="../pages2/217.html">Historique</a></li>
+
+            <li>
+                <a href="../pages2/22.html">Site de lancement</a>
+                <ul>
+                    <li><a href="../pages1/18.html">Cap Kennedy</a></li>
+                    <li><a href="../pages6/60.html">Kourou</a></li>
+                    <li><a href="../pages1/14.html">Baikonour</a></li>
+                    <li><a href="../pages6/762.html">Autres centres spatiaux</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages2/217.html">Missions spatiales</a>
+                <ul>
+                    <li><a href="../pages5/5.html">Apollo</a></li>
+                    <li><a href="../pages6/69.html">Mariner</a></li>
+
+                    <li><a href="../pages1/159.html">Viking</a></li>
+                    <li><a href="../pages1/160.html">Voyager</a></li>
+
+                    <li><a href="../pages4/41.html">Galileo</a></li>
+                    <li><a href="../pages2/219.html">Soho</a></li>
+
+                    <li><a href="../pages6/672.html">Mars Express</a></li>
+                    <li><a href="../pages2/222.html">Cassini/Huygens</a></li>
+                    <li><a href="../pages6/669.html">Luna</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+
+
+    </li>
+
+    <li>
+        <a href="../pages1/114.html"><span class="police_chap">Observatoires</span> </a>
+
+        <ul>
+
+            <li>
+                <a href="../pages6/95.html">France</a>
+                <ul>
+                    <li><a href="../pages1/103.html">Observatoire de Paris</a>
+
+                        <ul>
+                            <li>
+                                <a href="../pages2/245.html">L'Institut de Mécanique <br />Céleste et des Calculs <br />en Ephémérides/IMCCE</a>
+                            </li>
+                            <li>
+                                <a href="../pages6/86.html">Observatoire de Meudon</a>
+                            </li>
+                            <li>
+                                <a href="../pages2/281.html">Nançay</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages1/107.html">Pic du Midi</a></li>
+                    <li><a href="../pages6/96.html">Haute Provence</a></li>
+                    <li><a href="../pages2/267.html">Besançon</a></li>
+                    <li><a href="../pages2/268.html">Bordeaux</a></li>
+                    <li><a href="../pages2/269.html">Côte d'Azur</a></li>
+                    <li><a href="../pages2/270.html">Grenoble</a></li>
+                    <li><a href="../pages2/274.html">Lyon</a></li>
+                    <li><a href="../pages2/271.html">Marseille</a></li>
+                    <li><a href="../pages2/272.html">Strasbourg</a></li>
+                    <li><a href="../pages2/273.html">Toulouse</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages6/833.html">Europe</a>
+                <ul>
+                    <li><a href="../pages2/247.html">Greenwich</a></li>
+                    <li><a href="../pages6/822.html">Bruxelles</a></li>
+                    <li><a href="../pages6/823.html">Turin</a></li>
+                    <li><a href="../pages6/824.html">Castel Gandolfo</a></li>
+                    <li><a href="../pages6/825.html">Catane</a></li>
+                    <li><a href="../pages6/826.html">San Fernando</a></li>
+                    <li><a href="../pages6/827.html">Bucarest</a></li>
+                    <li><a href="../pages6/828.html">Poznan</a></li>
+                    <li><a href="../pages6/823.html">Nikolaev</a></li>
+                    <li><a href="../pages2/248.html">Pulkovo</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages2/246.html">Autres</a>
+                <ul>
+                    <li><a href="../pages2/249.html">Washington D.C.</a></li>
+                    <li><a href="../pages6/99.html">Mont Palomar</a></li>
+                    <li><a href="../pages1/165.html">Zélenchuk</a></li>
+                    <li><a href="../pages6/830.html">Shanghai</a></li>
+                    <li><a href="../pages6/831.html">Itajuba</a></li>
+                    <li><a href="../pages6/78.html">CFHT Hawai</a></li>
+                    <li><a href="../pages3/305.html">Iles canaries: THEMIS</a></li>
+                    <li><a href="../pages6/61.html">ESO</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages5/580.html">Les plus grands <br /> télescopes</a>
+                <ul>
+                      <li><a href="../pages5/580.html">Les réflecteurs</a></li>
+                      <li><a href="../pages5/581.html">Les réfracteurs</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Observatoires spatiaux</a>
+                <ul>
+                    <li><a href="../pages4/48.html">HST</a></li>
+                    <li><a href="../pages6/679.html">GAIA</a></li>
+                    <li><a href="../pages2/219.html">SOHO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+<li><a href="../pages2/258.html"><span class="police_chap">Comprendre</span> </a>
+          <ul>
+            <li><a href="../pages2/216.html">Astronomie de position</a>
+                <ul>
+                    <li><a href="../pages2/279.html">Calendriers</a></li>
+                    <li><a href="../pages3/321.html">Phénomènes <br />astronomiques</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../pages3/322.html">Ephémérides</a>
+                <ul>
+                    <li><a href="../pages3/370.html">Lever et coucher</a></li>
+                    <li><a href="../pages5/584.html">Positions</a></li>
+                </ul>
+            </li>
+
+                    <li><a href="../pages2/243.html">Concepts fondamentaux</a></li>
+                    <li><a href="../pages5/523.html">Constantes fondamentales</a></li>
+                    <li><a href="../pages2/259.html">Approfondir</a></li>
+                    <li><a href="../pages2/291.html">Histoire de l'astronomie</a></li>
+
+                    <li><a href="../pages2/221.html">Glossaire</a></li>
+                    <li><a href="../pages4/475.html">Enseigner</a></li>
+                    <li><a href="../pages2/201.html">Index</a></li>
+                    <li><a href="../pages1/188.html">Guide</a></li>
+
+        </ul>
+</li>
+</ul>
+  
+  
+ </header>
+
+    <br />
+
+  
+ <section>
+<!--	<div id="gauche-gauche">
+  <p>&nbsp;</p>
+	</div>-->
+	<div id="gauche">
+	 
+	     <a href="../pages5/525.html"><img id="P1" src="../images/new_image/page_precedente.png" alt="" /></a><a href="../pages3/314.html"><img id="P2" src="../images/new_image/page_suivante.png" alt="" /></a>
+	     <a href="../pages5/525.html"><img id="S1" src="../images/new_image/section_precedente.png" alt="" /></a><a href="../pages4/495.html"><img id="S2" src="../images/new_image/section_suivante.png" alt="" /></a>	
+	   	     
+	     <br />
+
+	     <a href="#ancre"><div id="plus">Haut de page</div></a> 
+ 	     <a href="../pages2/221.html"><div id="glossaire">Glossaire</div></a> 
+ 	     <a href="../pages2/201.html"><div id="index">Index</div></a> 
+	     <a href="../pages2/243.html"><div id="long1">Concepts fondamentaux<img id="P1" src="../images/new_image/page_precedente.png" alt="" /></div></a>
+	     <a href="../pages3/314.html"><div id="long1">La mécanique céleste<img id="P2" src="../images/new_image/page_suivante.png" alt="" /></div></a>
+	</div>
+
+
+
+	<div id="droite">
+<span class="fontsize">
+    <a class="LinkIn box1" title="Réduire la taille du texte du contenu" href="#"><img class="contour-print" alt="Réduire la taille du texte du contenu" onclick="changerTaille(-0.1); return false;" src="../images/new_image/dim-police.png"></a>
+    <a class="LinkIn box1" title="Aggrandir la taille du texte du contenu" href="#"><img class="contour-print" alt="Aggrandir la taille du texte du contenu" onclick="changerTaille(0.1); return false;" src="../images/new_image/aug-police.png"></a>
+    <a class="LinkIn box1" title="Imprimer cette page" href="#"><img class="contour-print" alt="Imprimer cette page" onclick="window.print(); return false;" src="../images/new_image/printer.png"></a>
+</span>
+
+ 
+  
+ <span class="fontsize-en">
+    <a class="LinkIn-en" title="English" href="../../../../../en/grandpublic/systeme/promenade-en/pages3/315.html">English</a>
+</span>
+
+	    <p id="position"><A class=" box1" HREF="../pages2/258.html">Comprendre </A>><A class=" box1"  HREF="../pages2/243.html"> Concepts fondamentaux </A>><A class=" box1" HREF="../pages3/315.html"> Mécanique céleste I</A></p>
+
+
+<H1>LES LOIS DE KEPLER</H1>
+<br />
+
+<p>Les lois de Kepler ne découlent que de l'observation du
+mouvement des astres&nbsp;: elles ne représentent qu'une description
+cinématique de ce mouvement sans faire d'hypothèses sur la
+nature des forces en jeu. <A class="box1" HREF="../pages1/167.html">Kepler</A>
+(1571-1630) est le disciple de Tycho Brahe (1546-1601) auquel il
+succède comme astronome de l'empereur d'Allemagne Rodolphe II. Tycho
+Brahe est principalement un observateur de positions précises
+mais s'il effectue de très bonnes observations, en revanche, il
+n'est pas convaincu par les théories héliocentriques de <A class="box1" HREF="../pages1/169.html">Copernic</A>
+(1473-1543). Il pense toujours que la Terre est au centre du système
+solaire. Kepler va utiliser les observations de Tycho Brahe
+pour énoncer ses lois. Kepler est convaincu que Copernic
+a raison, ce qui sera définitivement démontré par
+<A class="box1" HREF="../pages1/10.html">Galilée</A> (1564-1642) en 1610 gr&acirc;ce
+à l'utilisation d'une lunette astronomique et à l'observation
+des <A class="box1" HREF="../pages4/491.html">satellites de Jupiter</A>.</p>
+
+<p class="italique">Kepler énonce ses deux premières lois en 1609&nbsp;:</p>
+
+<p>-chaque planète décrit, dans le sens direct,
+une ellipse dont le Soleil occupe l'un des foyers.
+<br />Jusqu'alors, on n'avait considéré que le&nbsp; cercle
+comme trajectoire possible des corps céleste. Ce sont les observations
+précises de Tycho Brahe qui ont permis de revenir sur ce
+postulat. L'ellipticité des orbites des planètes est très
+faible. La différence entre le cercle et l'orbite de la Terre est
+infime&nbsp;: si on veut la représenter sur une feuille de papier, la
+différence entre le cercle et l'ellipse tient dans l'épaisseur
+du trait de crayon ! Heureusement le Soleil n'est pas au centre de l'ellipse,
+mais au foyer qui est décentré.
+<br />-les aires décrites par le rayon vecteur planète-Soleil
+sont proportionnelles aux temps employés pour les décrire.
+<br />La signification de cette loi est claire&nbsp;: les planètes ne tournent
+pas avec une vitesse uniforme&nbsp;: elles vont plus vite quand elles sont près
+du Soleil et plus lentement quand elles en sont loin. Cela est particulièrement
+observable pour les comètes dont les orbites sont, contrairement
+à celles des planètes, très excentriques (très allongées).</p>
+
+
+<div class="centrer"><img class="image13" SRC="../images/jpg5/559.jpg" alt=""></div>
+
+<figcaption class="credit">La loi des aires&nbsp;: les aires décrites par le mobile dans des temps égaux sont égales.&nbsp;Ainsi, lorsque l'astre s'éloigne du Soleil, sa vitessediminue.&nbsp;</figcaption><br /><br />
+
+
+<p class="italique">Kepler énonce sa troisième loi en 1619&nbsp;:</p>
+
+<p>-le cube du demi grand axe <em class="italique">a</em> d'une orbite d'une
+planète, divisé par le carré de la période
+de révolution T (sidérale) est une constante pour toutes
+les planètes du système solaire.
+<br />C'est-à-dire&nbsp;:
+<br /><em class="italique">a</em><SUP>3</SUP>/T<SUP>2</SUP> = constante ou bien
+n<SUP>2 </SUP><em class="italique">a</em><SUP>3</SUP> = constante (n étant le moyen
+mouvement = 2&pi;/T)
+<br />
+  Cette loi relie les planètes entre elles. En fait, cette loi provient
+  de la masse prépondérante du Soleil dans le système solaire.
+  On verra que la loi de la gravitation engendre une force proportionnelle aux
+  masses en jeu. Dans le cas du système solaire, les masses des planètes
+  sont négligeables devant celle du Soleil et la constante ci-dessus est
+  le produit de la masse solaire et de <a class="box1" href="../pages5/523.html#GM">la constante de la gravitation</a>. </p>
+
+<p>Kepler ne pouvait pas démontrer ses lois&nbsp;: il lui manquait
+les principes fondamentaux de la mécanique ainsi que la loi de Newton,
+c'est-à-dire les fondements de la dynamique, qui, appliqués
+aux astres, forment la mécanique céleste. Kepler introduit
+la notion de trajectoire elliptique qui va complètement modifier
+la modélisation du système solaire.</p>
+
+
+<H2><A NAME="ellipse"></A>Les paramètres de l'ellipse</H2>
+
+<p>Pour définir une trajectoire elliptique, on a besoin de six paramètres&nbsp;:</p>
+
+<p>-le demi-grand axe <em class="italique">a</em>
+<br />-l'excentricité <em class="italique">e</em> telle que <em class="italique">e<SUP>2</SUP>=(a<SUP>2</SUP>-b<SUP>2</SUP>)/a<SUP>2</SUP></em>
+o&ugrave; <em class="italique">b</em> est le demi-petit axe. On a : OF= <em class="italique">a e</em> .
+<br />-l'inclinaison i sur un plan de référence (équateur ou écliptique)
+<br />-la longitude du noeud ascendant sur le plan de référence
+<br />-la longitude du périastre (point de la trajectoire le plus
+proche du corps central) comptée à partir du noeud ascendant
+ou d'une direction fixe (équinoxe)
+<br />-l'instant de passage du corps au périastre <em class="italique">t<SUB>0</SUB></em>
+ou l'anomalie moyenne <em class="italique">M=n(t-t<SUB>0</SUB>)</em> o&ugrave; <em class="italique">n=2&pi;/T</em>
+avec <em class="italique">T</em> période de révolution définie par la
+3<SUP>ème</SUP> loi de Kepler (qui dit que <em class="italique">n<SUP>2</SUP>
+a<SUP>3</SUP></em> est une constante connue).</p>
+
+
+<div class="centrer"><img class="image10" SRC="../images/jpg5/561.jpg" alt=""></div>
+<figcaption class="credit">Comment repérer une ellipse dans l'espace (O est le centre et F le foyer).</figcaption><br />
+
+<H2><A NAME="mecaceldist"></A>La mécanique céleste et les distances dans le système solaire</H2>
+
+<p>Les lois de Kepler nous fournissent un modèle extr&ecirc;mement
+  puissant pour déterminer les distances dans le système solaire.
+  Nous avons vu que l'observation simple des corps du système solaire ne
+  nous permet d'obtenir que la distance Terre-Lune. La distance Terre-Soleil est
+  trop grande pour la mesurer avec précision à l'aide de la parallaxe.
+  Les lois de Kepler vont nous aider. Comme nous venons de le voir, le
+  moyen mouvement n (=2&pi;/T) et le demi-grand axe sont
+  liés&nbsp;: donc si on connaît <strong class="gras">une</strong> distance dans le système
+  solaire, on connaît <strong class="gras">toutes les autres </strong>comme le montre le shéma
+  suivant. </p>
+
+
+<div class="centrer"><img class="image14" SRC="../images/jpg5/562.jpg" alt=""></div>
+<figcaption class="credit">Mesure des distances dans le système solaire par la mesure de distance au passage proche d'un autre corps</figcaption><br />
+
+
+<p><A NAME="pass"></A>Historiquement, la première distance mesurée
+dans le système solaire ne fut pas la distance Terre-Soleil. Pour
+cette détermination, on mesura la distance Terre-Mars. La première
+observation de cette distance eut lieu en 1672 lors du passage proche de
+Mars, puis ce fut la distance Terre-Vénus lors des passages de Vénus
+devant le Soleil o&ugrave; l'effet de parallaxe est particulièrement
+visible pour deux observateurs éloignés.</p>
+
+<div class="centrer"><img class="image14" SRC="../images/jpg5/563.jpg" alt=""></div>
+
+
+
+<figcaption class="credit"><A class="box1" HREF="319.html">Les passages de Vénus</A> devant le Soleil se font sur des cordes horizontales et sont vus différemment selon le lieu d'observation sur Terre&nbsp;: on en déduit la distance Terre-Vénus</figcaption><br /><br />
+
+
+<p>Vers 1930, on a mesuré la distance Terre-Eros (astéroïde
+passant au plus près de la Terre). Aujourd'hui, on réalise
+des tirs radar sur Mars, Vénus, Mercure qui donnent la distance
+avec précision. On en déduit alors toutes les distances des
+planètes en observant leur demi-grand axe en unités angulaires
+et leur période. On se définit comme unité de distance
+le demi-grand axe d'un corps dont la période est 365,2568983263
+jours. C'est presque la Terre, mais pas vraiment car l'unité de
+distance dans le système solaire ne doit pas dépendre des
+améliorations de la théorie du mouvement de la Terre.</p>
+<p class="credit">Crédit&nbsp;: J.E. ArlotIMCCE</p>
+	</div>
+
+<br /><br />
+
+</section>
+
+
+<footer>
+
+  <div>
+    <a href="../pages1/166.html"> Plan du site</a>&nbsp;&nbsp;&nbsp;<a href="../pages1/189.html"> Copyright</a>
+  </div>
+</footer>
+
+    </div>
+  </BODY>
+</HTML>
